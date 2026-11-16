@@ -1,0 +1,47 @@
+{
+  "name": {
+    "tr": "İletişim",
+    "en": "Contact",
+    "ar": "تواصل"
+  },
+  "status": "play",
+  "category": "",
+  "id": "iletisim",
+  "url": "",
+  "path": "iletisim",
+  "index": 4,
+  "icon": "call",
+  "desing": {
+    "header": [],
+    "body": [
+      "7z6hex",
+      "k8mp01"
+    ],
+    "footer": []
+  },
+  "pathnext": "",
+  "description": {
+    "tr": "Sohbet biçiminde mesaj formu, adres ve saatler.",
+    "en": "Chat-style message form, address and hours.",
+    "ar": "نموذج رسالة على شكل محادثة والعنوان والساعات."
+  },
+  "spot": {
+    "tr": "",
+    "en": "",
+    "ar": ""
+  },
+  "desc": {},
+  "title": {
+    "tr": "İletişim",
+    "en": "Contact",
+    "ar": "تواصل"
+  },
+  "keyword": {
+    "tr": "iletişim",
+    "en": "contact",
+    "ar": "اتصال"
+  },
+  "text": {},
+  "update": "2026-11-16T18:11:12.492Z",
+  "date": "2026-10-30"
+}

@@ -1,0 +1,139 @@
+{
+  "data": [
+    {
+      "id": "o6ckxseb26",
+      "name": {
+        "tr": "Seanslar",
+        "en": "Sessions",
+        "ar": "الجلسات"
+      },
+      "description": {
+        "tr": "Ritüel adımları ve ev kuralları.",
+        "en": "Ritual steps and house rules.",
+        "ar": "خطوات الطقس وقواعد البيت."
+      },
+      "path": "hizmetler",
+      "icon": "work",
+      "category": "",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [
+          "acpx1k",
+          "agux55",
+          "9q871c"
+        ],
+        "footer": []
+      },
+      "index": 0
+    },
+    {
+      "name": {
+        "tr": "Hakkımızda",
+        "en": "About",
+        "ar": "من نحن"
+      },
+      "status": "play",
+      "id": "hakkimizda",
+      "path": "hakkimizda",
+      "category": "",
+      "url": "",
+      "index": 1,
+      "icon": "info",
+      "desing": {
+        "header": [],
+        "body": [
+          "agux55",
+          "xwumqh"
+        ],
+        "footer": []
+      },
+      "pathnext": "",
+      "description": {
+        "tr": "Ev kuralları ve misafir notları (kurgusal).",
+        "en": "House rules and guest notes (fictional).",
+        "ar": "قواعد البيت وملاحظات الضيوف (افتراضي)."
+      }
+    },
+    {
+      "id": "4c14nhn9fi",
+      "name": {
+        "tr": "Sorular",
+        "en": "Questions",
+        "ar": "الأسئلة"
+      },
+      "description": {
+        "tr": "Merak edilenler ve kısa yanıtlar.",
+        "en": "Common questions and short answers.",
+        "ar": "أسئلة متكررة وإجابات موجزة."
+      },
+      "path": "sorular",
+      "icon": "help",
+      "category": "",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [
+          "wfruxl",
+          "9q871c"
+        ],
+        "footer": []
+      },
+      "index": 2
+    },
+    {
+      "id": "7igsib31z6",
+      "name": {
+        "tr": "Randevu",
+        "en": "Booking",
+        "ar": "الحجز"
+      },
+      "description": {
+        "tr": "Seans, terapist, gün ve saat seçerek randevu talebi (demo).",
+        "en": "Booking request by session, therapist, day and time (demo).",
+        "ar": "طلب حجز باختيار الجلسة والمعالج واليوم والوقت (تجريبي)."
+      },
+      "path": "teklif-al",
+      "icon": "event",
+      "category": "",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [
+          "350of2"
+        ],
+        "footer": []
+      },
+      "index": 3
+    },
+    {
+      "name": {
+        "tr": "İletişim",
+        "en": "Contact",
+        "ar": "تواصل"
+      },
+      "status": "play",
+      "id": "iletisim",
+      "path": "iletisim",
+      "category": "",
+      "url": "",
+      "index": 4,
+      "icon": "call",
+      "desing": {
+        "header": [],
+        "body": [
+          "7z6hex",
+          "k8mp01"
+        ],
+        "footer": []
+      },
+      "pathnext": "",
+      "description": {
+        "tr": "Sohbet biçiminde mesaj formu, adres ve saatler.",
+        "en": "Chat-style message form, address and hours.",
+        "ar": "نموذج رسالة على شكل محادثة والعنوان والساعات."
+      }
+    }
+  ],
+  "desc": []
+}

@@ -1,0 +1,41 @@
+{
+  "id": "o6ckxseb26",
+  "name": {
+    "tr": "Seanslar",
+    "en": "Sessions",
+    "ar": "الجلسات"
+  },
+  "description": {
+    "tr": "Ritüel adımları ve ev kuralları.",
+    "en": "Ritual steps and house rules.",
+    "ar": "خطوات الطقس وقواعد البيت."
+  },
+  "keyword": {
+    "tr": "Seanslar",
+    "en": "Sessions",
+    "ar": "الجلسات"
+  },
+  "path": "hizmetler",
+  "icon": "work",
+  "category": "",
+  "status": "play",
+  "desing": {
+    "header": [],
+    "body": [
+      "acpx1k",
+      "agux55",
+      "9q871c"
+    ],
+    "footer": []
+  },
+  "index": 0,
+  "url": "",
+  "text": {},
+  "title": {
+    "tr": "Seanslar",
+    "en": "Sessions",
+    "ar": "الجلسات"
+  },
+  "date": "2026-11-16T18:08:37.524Z",
+  "update": "2026-11-16T18:11:12.475Z"
+}

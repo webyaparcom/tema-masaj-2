@@ -1,0 +1,54 @@
+{
+  "order": false,
+  "user": false,
+  "description": {
+    "tr": "Nehir Masaj Evi: Antalya Muratpaşa’da klasik, sıcak taş, aromaterapi ve ayak masajı; paketinizi seçin, gün ve saati çarktan belirleyin. Demo site; içerik ve fiyatlar kurgusaldır.",
+    "en": "Nehir Massage House: classic, hot stone, aromatherapy and foot massage in Muratpasa, Antalya; choose your package and pick a day and time on the wheel. Demo site; content and prices are fictional.",
+    "ar": "بيت نهير للتدليك: تدليك كلاسيكي وبالحجارة الساخنة وبالزيوت العطرية وتدليك القدمين في مورات باشا، أنطاليا؛ اختر باقتك وحدّد اليوم والوقت من العجلة. موقع تجريبي؛ المحتوى والأسعار افتراضية."
+  },
+  "keyword": {
+    "tr": "masaj, sıcak taş masajı, aromaterapi, ayak masajı, rahatlama, Antalya",
+    "en": "massage, hot stone massage, aromatherapy, foot massage, relaxation, Antalya",
+    "ar": "تدليك، تدليك بالحجارة الساخنة، العلاج بالروائح، تدليك القدمين، استرخاء، أنطاليا"
+  },
+  "category": "Kurumsal",
+  "name": "Nehir Masaj Evi",
+  "domain": "masaj-2.webyapar.com",
+  "langs": {
+    "tr": true,
+    "en": true,
+    "ar": true,
+    "de": false,
+    "ru": false,
+    "es": false,
+    "fr": false,
+    "it": false,
+    "ja": false,
+    "zh": false,
+    "ko": false,
+    "pt": false
+  },
+  "logo": "logo.png",
+  "multi": false,
+  "publishMode": "static",
+  "font": {
+    "body": "nunito",
+    "heading": "cormorant-garamond",
+    "ar": {
+      "body": "ibm-plex-sans-arabic",
+      "heading": "noto-naskh-arabic"
+    }
+  },
+  "colorScheme": "auto",
+  "theme_color": "#9A5B3C",
+  "seo": {
+    "noindex": true
+  },
+  "cssTokens": {
+    "--mx-radius-sm": "13px",
+    "--mx-radius-md": "22px",
+    "--mx-radius-lg": "31px",
+    "--mx-radius-xl": "999px"
+  },
+  "icon": "icon.png"
+}

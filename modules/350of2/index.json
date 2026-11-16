@@ -1,0 +1,51 @@
+{
+  "name": "Randevu Saat Çarkı — gün ve saat kaydırmalı çark seçici",
+  "description": "Koyu zeminde kiosk kartı: yan yana iki dikey çark (açık günler · saatler), ortada sabit vurgu bandı; çark kaydırılınca bantta duran öğe seçilir, dokunulan öğe banda kayar. Kartın altında seçimler canlı fiş satırları olarak yazılır. Yanda ürün/hizmet çipleri, uzman, ad, telefon, not, KVKK ve tam genişlik gönder. Gel-al / paket teslim saati ya da masa için hızlı seçim. JS yokken gün yerine yerel tarih alanı, saat çarkı kaydırılabilir radyo listesi. Mevcut randevu-* modülleri saati çip/kutu/açılır listeyle seçtirir; bu modül mobil işletim sistemi tarzı scroll-snap çark seçicidir (teker parçası: kaydırma bitince ortadaki öğe seçilir, seçilen öğe ortalanır) ve gün şeridini yatay değil dikey çark olarak kurar — dar ekranda tek başparmakla seçim. Sunucusuz gönderim (formAction JSON POST › WhatsApp › .ics › mailto), kapalı gün denetimi, KVKK onayı. Metinler dil sözlüğü, renkler desing + var(--mx-site-*), mantıksal CSS → RTL. Gönderim yolu yoksa blok basılmaz.",
+  "version": "1.0.0",
+  "icon": "swipe_vertical",
+  "category": "randevu",
+  "subCategory": "wheel-picker",
+  "tags": [
+    "randevu",
+    "wheel",
+    "picker",
+    "pickup",
+    "scroll-snap",
+    "rtl",
+    "fabrika"
+  ],
+  "desing": {
+    "max": "1200px",
+    "bosluk": "clamp(56px, 8vw, 104px)",
+    "yuvarlak": "18px",
+    "ust": "",
+    "baslik": "",
+    "metin": "",
+    "bg": "var(--mx-site-text, #111318)",
+    "text": "var(--mx-site-bg, #ffffff)",
+    "muted": "color-mix(in srgb, var(--mx-site-bg, #ffffff) 78%, var(--mx-site-text, #111318))",
+    "kartBg": "color-mix(in srgb, var(--mx-site-bg, #ffffff) 7%, transparent)",
+    "cizgi": "color-mix(in srgb, var(--mx-site-bg, #ffffff) 18%, transparent)",
+    "accent": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 55%, var(--mx-site-bg, #ffffff))",
+    "accentInk": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 45%, var(--mx-site-bg, #ffffff))",
+    "accentText": "var(--mx-site-text, #111318)",
+    "vurguBg": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 55%, var(--mx-site-bg, #ffffff))",
+    "vurguText": "var(--mx-site-text, #111318)",
+    "bgcolor": "var(--mx-site-text, #111318)",
+    "color": "var(--mx-site-bg, #ffffff)"
+  },
+  "data": [],
+  "veri": {
+    "statik": true,
+    "dinamik": false,
+    "kaynak": "desing",
+    "alanlar": {
+      "ad": "hizmet adı (dil sözlüğü, zorunlu) — eski `services[].name`",
+      "sure": "dakika — eski `duration`",
+      "fiyat": "sayı (sayfa diliyle biçimlenir) — eski `price`",
+      "ikon": "Material Symbols adı",
+      "metin": "kısa açıklama (dil sözlüğü)",
+      "img": "görsel (destekleyen yerleşimde)"
+    }
+  }
+}

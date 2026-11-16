@@ -1,0 +1,129 @@
+<section class="modulex-deger-nefes{{fbsinif}}" {{fbetiket}}>
+  <div class="modulex-deger-nefes-ic">
+    {{fbbas}}
+    {{fbgovde}}
+  </div>
+</section>
+
+<style>
+  /* deger-nefes — deger-sekme/deger-cip-sec seçimi kullanıcıya bırakır, deger-yorunge/deger-ikon-dev durağandır; bu modül zamanlı (nefes ritminde) otomatik döngüdür — tek değer dairenin içinde, duraklatılabilir, nokta göstergeli; iskelet üst üste binen daire + metin katmanıdır. */
+  .modulex-deger-nefes { box-sizing: border-box; width: 100%; padding: --bosluk-- 20px; background: --bg--; color: --text--; font-size: 1rem; line-height: 1.6; font-family: var(--mx-font-sans, inherit); overflow-wrap: break-word; }
+  .modulex-deger-nefes *, .modulex-deger-nefes *::before, .modulex-deger-nefes *::after { box-sizing: border-box; }
+  /* ham/css.css «* { font-size: 14px }» kalıtımı keser — modül içinde boyut üstten gelsin (ikon yazı tipi hariç) */
+  .modulex-deger-nefes :where(*:not(.material-symbols-outlined)) { font-size: inherit; }
+  /* aynı «*» kuralı font-weight 400 · line-height 1.2 · font-family de basar — modül içinde kalıtım */
+  .modulex-deger-nefes :where(*:not(.material-symbols-outlined)) { font-weight: inherit; line-height: inherit; font-family: inherit; }
+  .modulex-deger-nefes :where(h2, h3, h4, p, ul, ol, li, figure, blockquote, dl, dd) { margin: 0; }
+  .modulex-deger-nefes :where(ul, ol) { padding: 0; list-style: none; }
+  .modulex-deger-nefes img { display: block; max-width: 100%; }
+  /* <img width height> öznitelik yüksekliği CSS aspect-ratio'yu ezer — sıfır özgüllükle auto (modül sınıfının height'ı yine kazanır) */
+  :where(.modulex-deger-nefes) img { height: auto; }
+  .modulex-deger-nefes [hidden] { display: none !important; }
+  .modulex-deger-nefes :where(a, button, summary, [data-cevir]) { cursor: pointer; }
+  .modulex-deger-nefes :where(a, button, summary, [tabindex]):focus-visible { outline: 3px solid --accent--; outline-offset: 3px; }
+  .modulex-deger-nefes-ic { max-width: --max--; margin-inline: auto; }
+  .modulex-deger-nefes-bas { display: grid; gap: 12px; margin-block-end: clamp(32px, 4vw, 52px); }
+  .modulex-deger-nefes--bassiz .modulex-deger-nefes-bas { display: none; }
+  .modulex-deger-nefes-ust { color: --accentInk--; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
+  .modulex-deger-nefes-baslik { font-family: var(--mx-font-heading, inherit); font-size: clamp(1.8rem, 3.4vw, 2.8rem); font-weight: 750; letter-spacing: -0.025em; line-height: 1.1; }
+  .modulex-deger-nefes-metin { color: --muted--; font-size: 1.05rem; line-height: 1.7; }
+  .modulex-deger-nefes-bas { max-width: 780px; margin-inline: auto; text-align: center; justify-items: center; }
+  .modulex-deger-nefes-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-block-start: 8px; }
+  .modulex-deger-nefes-dugme { display: inline-flex; align-items: center; gap: 8px; min-height: 48px; padding: 12px 22px; border: 2px solid --accent--; border-radius: 999px; background: --accent--; color: --accentText--; font-weight: 700; text-decoration: none; transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease; }
+  .modulex-deger-nefes-dugme:hover { transform: translateY(-2px); }
+  .modulex-deger-nefes-dugme--ikincil { background: transparent; color: --text--; border-color: --cizgi--; }
+  .modulex-deger-nefes-dugme--ikincil:hover { border-color: --accent--; }
+  .modulex-deger-nefes-dugme .material-symbols-outlined { font-size: 20px; }
+
+  .modulex-deger-nefes-alan { --cap: min(84vw, 520px); }
+  .modulex-deger-nefes-liste { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 18px; }
+  .modulex-deger-nefes-oge { position: relative; display: grid; justify-items: center; align-content: start; gap: 10px; padding: 28px 22px; border-radius: 999px 999px --yuvarlak-- --yuvarlak--; background: --bg--; text-align: center; }
+  .modulex-deger-nefes-halka, .modulex-deger-nefes-kumanda { display: none; }
+  .modulex-deger-nefes--js .modulex-deger-nefes-alan { display: grid; place-items: center; }
+  .modulex-deger-nefes--js .modulex-deger-nefes-halka { position: relative; display: block; grid-area: 1 / 1; width: var(--cap); aspect-ratio: 1; }
+  .modulex-deger-nefes--js .modulex-deger-nefes-liste { display: grid; grid-area: 1 / 1; place-items: center; width: min(66%, calc(var(--cap) * 0.66)); }
+  .modulex-deger-nefes--js .modulex-deger-nefes-oge { grid-area: 1 / 1; max-width: 340px; padding: 0; border-radius: 0; background: transparent; animation: modulex-deger-nefes-gel 1.2s ease both; }
+  .modulex-deger-nefes-dalga { position: absolute; inset: 8%; border: 2px solid color-mix(in srgb, --accent-- 40%, transparent); border-radius: 50%; animation: modulex-deger-nefes-yay 8s ease-out infinite; }
+  .modulex-deger-nefes-dalga:nth-child(2) { animation-delay: -2.67s; }
+  .modulex-deger-nefes-dalga:nth-child(3) { animation-delay: -5.33s; }
+  .modulex-deger-nefes-cekirdek { position: absolute; inset: 10%; border-radius: 50%; background: radial-gradient(circle, --bg-- 52%, color-mix(in srgb, --accent-- 22%, --bg--)); box-shadow: 0 30px 60px -40px color-mix(in srgb, --accent-- 80%, transparent); animation: modulex-deger-nefes-nefes 8s ease-in-out infinite; }
+  .modulex-deger-nefes--durdu :is(.modulex-deger-nefes-dalga, .modulex-deger-nefes-cekirdek) { animation-play-state: paused; }
+  .modulex-deger-nefes-ikon { color: --accentInk--; font-size: 40px; }
+  .modulex-deger-nefes-etiket { color: --accentInk--; font-size: 0.76rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
+  .modulex-deger-nefes-kbaslik { font-family: var(--mx-font-heading, inherit); font-size: clamp(1.5rem, 3vw, 2.3rem); font-weight: 750; letter-spacing: -0.01em; line-height: 1.15; }
+  .modulex-deger-nefes-kmetin { color: --muted--; line-height: 1.7; }
+  .modulex-deger-nefes--js .modulex-deger-nefes-kumanda { display: flex; align-items: center; justify-content: center; gap: 18px; margin-block-start: 18px; }
+  .modulex-deger-nefes-dur { display: inline-grid; place-items: center; width: 48px; height: 48px; border: 1px solid --cizgi--; border-radius: 50%; background: --bg--; color: --text--; transition: background 0.25s ease, color 0.25s ease; }
+  .modulex-deger-nefes-dur:hover { background: --accent--; color: --accentText--; }
+  .modulex-deger-nefes-noktalar { display: flex; gap: 6px; }
+  .modulex-deger-nefes-nokta { width: 26px; height: 26px; padding: 0; border: 0; border-radius: 50%; background: radial-gradient(circle, color-mix(in srgb, --text-- 30%, transparent) 0 4px, transparent 4.5px); transition: background 0.3s ease; }
+  .modulex-deger-nefes-nokta[aria-current] { background: radial-gradient(circle, --accent-- 0 7px, transparent 7.5px); }
+  @keyframes modulex-deger-nefes-nefes { 0%, 100% { transform: scale(0.86); } 50% { transform: scale(1); } }
+  @keyframes modulex-deger-nefes-yay { 0% { transform: scale(0.82); opacity: 0.9; } 100% { transform: scale(1.14); opacity: 0; } }
+  @keyframes modulex-deger-nefes-gel { from { opacity: 0; transform: scale(0.94); } to { opacity: 1; transform: none; } }
+  @media (max-width: 768px) {
+    .modulex-deger-nefes-alan { --cap: min(92vw, 380px); }
+    .modulex-deger-nefes--js .modulex-deger-nefes-liste { width: calc(var(--cap) * 0.7); }
+    .modulex-deger-nefes-kbaslik { font-size: 1.4rem; }
+    .modulex-deger-nefes--js .modulex-deger-nefes-kmetin { font-size: 0.92rem; }
+    .modulex-deger-nefes--js .modulex-deger-nefes-ikon { font-size: 32px; }
+  }
+  .modulex-deger-nefes-bag { color: inherit; text-decoration: none; }
+  .modulex-deger-nefes-bag::after { content: ""; position: absolute; inset: 0; z-index: 3; }
+  .modulex-deger-nefes-bag:hover { text-decoration: underline; text-underline-offset: 4px; }
+
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-deger-nefes :is(.modulex-deger-nefes-baslik, .modulex-deger-nefes-ust, h3, h4, strong) { letter-spacing: 0; }
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-deger-nefes-baslik { line-height: 1.35; }
+  @media (max-width: 768px) {
+    .modulex-deger-nefes { padding-inline: 16px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .modulex-deger-nefes *, .modulex-deger-nefes *::before, .modulex-deger-nefes *::after { animation: none !important; transition: none !important; }
+  }
+</style>
+<script>
+  (() => {
+    const P = "modulex-deger-nefes";
+    const az = !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+    const nefes = (s, P, az) => {
+        const alan = s.querySelector("[data-nefes]");
+        const o = [...s.querySelectorAll("[data-nefes-oge]")];
+        if (!alan || !o.length) return;
+        s.classList.add(P + "--js");
+        const g = [...s.querySelectorAll("[data-nefes-git]")];
+        const dur = s.querySelector("[data-nefes-dur]");
+        let i = 0;
+        let t = null;
+        let durdu = az;
+        let ust = false;
+        const goster = (j) => {
+          i = (j + o.length) % o.length;
+          o.forEach((x, y) => { x.hidden = y !== i; });
+          g.forEach((b, y) => { if (y === i) b.setAttribute("aria-current", "true"); else b.removeAttribute("aria-current"); });
+        };
+        const kur = () => {
+          clearInterval(t);
+          t = null;
+          if (!durdu && !ust && o.length > 1) t = setInterval(() => { if (!document.hidden) goster(i + 1); }, 8000);
+          s.classList.toggle(P + "--durdu", durdu);
+          if (!dur) return;
+          dur.setAttribute("aria-label", durdu ? dur.dataset.oynat || "" : dur.dataset.dur || "");
+          const ik = dur.querySelector(".material-symbols-outlined");
+          if (ik) ik.textContent = durdu ? "play_arrow" : "pause";
+        };
+        g.forEach((b) => b.addEventListener("click", () => { goster(Number(b.dataset.nefesGit) || 0); kur(); }));
+        if (dur) dur.addEventListener("click", () => { durdu = !durdu; kur(); });
+        alan.addEventListener("mouseenter", () => { ust = true; kur(); });
+        alan.addEventListener("mouseleave", () => { ust = false; kur(); });
+        s.addEventListener("focusin", (e) => { if (alan.contains(e.target)) { ust = true; kur(); } });
+        s.addEventListener("focusout", (e) => { if (alan.contains(e.target)) { ust = false; kur(); } });
+        goster(0);
+        kur();
+      };
+    document.querySelectorAll("." + P).forEach((s) => {
+      if (s.dataset.fbHazir) return;
+      s.dataset.fbHazir = "1";
+      nefes(s, P, az);
+    });
+  })();
+</script>

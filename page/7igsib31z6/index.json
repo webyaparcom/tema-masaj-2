@@ -1,0 +1,39 @@
+{
+  "id": "7igsib31z6",
+  "name": {
+    "tr": "Randevu",
+    "en": "Booking",
+    "ar": "الحجز"
+  },
+  "description": {
+    "tr": "Seans, terapist, gün ve saat seçerek randevu talebi (demo).",
+    "en": "Booking request by session, therapist, day and time (demo).",
+    "ar": "طلب حجز باختيار الجلسة والمعالج واليوم والوقت (تجريبي)."
+  },
+  "keyword": {
+    "tr": "randevu",
+    "en": "appointment",
+    "ar": "موعد"
+  },
+  "path": "teklif-al",
+  "icon": "event",
+  "category": "",
+  "status": "play",
+  "desing": {
+    "header": [],
+    "body": [
+      "350of2"
+    ],
+    "footer": []
+  },
+  "index": 3,
+  "url": "",
+  "text": {},
+  "title": {
+    "tr": "Randevu",
+    "en": "Booking",
+    "ar": "الحجز"
+  },
+  "date": "2026-11-16T18:08:37.541Z",
+  "update": "2026-11-16T18:11:12.487Z"
+}

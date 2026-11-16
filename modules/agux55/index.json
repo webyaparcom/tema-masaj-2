@@ -1,0 +1,51 @@
+{
+  "name": "Değer Nefes — nefes ritminde değişen tek değer dairesi",
+  "description": "Ortada nefes alıp veren (8 sn) yumuşak bir daire ve çevresinde yayılan halkalar; her nefeste dairenin içindeki değer sıradakiyle değişir. Altta duraklat/başlat düğmesi ve değer noktaları; üzerine gelince ya da odaklanınca döngü bekler, hareket azaltılmışsa otomatik geçiş hiç başlamaz. JS yoksa değerler kart ızgarasında. deger-sekme/deger-cip-sec seçimi kullanıcıya bırakır, deger-yorunge/deger-ikon-dev durağandır; bu modül zamanlı (nefes ritminde) otomatik döngüdür — tek değer dairenin içinde, duraklatılabilir, nokta göstergeli; iskelet üst üste binen daire + metin katmanıdır. Metinler dil sözlüğü, renkler desing + var(--mx-site-*), mantıksal CSS → RTL. Veri yoksa blok basılmaz.",
+  "version": "1.0.0",
+  "icon": "self_improvement",
+  "category": "values",
+  "subCategory": "breathing-cycle",
+  "tags": [
+    "values",
+    "breathing",
+    "autoplay",
+    "cycle",
+    "pause",
+    "rtl",
+    "fabrika"
+  ],
+  "desing": {
+    "max": "1200px",
+    "bosluk": "clamp(56px, 8vw, 104px)",
+    "yuvarlak": "18px",
+    "ust": "",
+    "baslik": "",
+    "metin": "",
+    "bg": "var(--mx-site-surface, #f6f7f9)",
+    "text": "var(--mx-site-text, #111318)",
+    "muted": "color-mix(in srgb, var(--mx-site-text, #111318) 70%, var(--mx-site-surface, #f6f7f9))",
+    "kartBg": "var(--mx-site-bg, #ffffff)",
+    "cizgi": "color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent)",
+    "accent": "var(--mx-site-primary, #2563eb)",
+    "accentInk": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318))",
+    "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+    "vurguBg": "var(--mx-site-primary, #2563eb)",
+    "vurguText": "var(--mx-site-primary-contrast, #ffffff)",
+    "bgcolor": "var(--mx-site-surface, #f6f7f9)",
+    "color": "var(--mx-site-text, #111318)"
+  },
+  "data": [],
+  "veri": {
+    "statik": true,
+    "dinamik": false,
+    "kaynak": "data",
+    "alanlar": {
+      "ikon": "Material Symbols adı",
+      "baslik": "dil sözlüğü (zorunlu)",
+      "metin": "dil sözlüğü",
+      "etiket": "dil sözlüğü (küçük üst etiket)",
+      "img": "görsel yolu (destekleyen yerleşimde)",
+      "url": "iç/dış bağlantı (kartın tamamı tıklanır)"
+    }
+  }
+}

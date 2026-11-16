@@ -1,0 +1,62 @@
+{
+  "name": "Alt Nokta Izgara — noktalı çizim kâğıdına oturan köşe işaretli plakalar",
+  "description": "Footer alanı 24 px'lik noktalı bir çizim kâğıdı (kenarlarında cetvel çentikleri); bilgi grupları bu zemine oturan beyaz plakalarda: geniş marka plakası (logo, tanıtım, düğme), sayfalar, bağlantılar; ikinci sırada geniş iletişim, saatler ve sosyal. Plakaların köşesinde vurgu renkli artı/köşe işaretleri ve sağ üstte koordinat numarası; altta telif, yasal, dil, başa dön. Zemin bir ölçü düzlemi: noktalı desen ve cetvel çentikleri CSS ile çizilir, plakalar hover'da kalkar ve köşe işaretleri dışa açılır — çizgi ızgaranın paylaşılan kenarlarından farklı olarak aralıklı plakalar, satırlar flex ile dolar (saat yoksa delik kalmaz). Sayfalar site sayfalarından, iletişim desing → site ayarı, sosyal wmSocialBar, dil seçici {{langbar}}. Metinler dil sözlüğü / lang.json; renkler desing + var(--mx-site-*); mantıksal CSS → RTL.",
+  "version": "1.0.0",
+  "icon": "grain",
+  "category": "footer",
+  "subCategory": "dot-grid",
+  "tags": [
+    "footer",
+    "dot-grid",
+    "blueprint",
+    "plates",
+    "rtl",
+    "fabrika"
+  ],
+  "desing": {
+    "max": "1200px",
+    "bosluk": "clamp(48px, 6vw, 80px)",
+    "yuvarlak": "18px",
+    "ust": "",
+    "baslik": "",
+    "metin": "",
+    "hakkinda": "",
+    "tel": "",
+    "eposta": "",
+    "adres": "",
+    "cta_ad": "",
+    "cta_url": "",
+    "rightsText": "",
+    "bg": "var(--mx-site-bg, #ffffff)",
+    "text": "var(--mx-site-text, #111318)",
+    "muted": "color-mix(in srgb, var(--mx-site-text, #111318) 68%, var(--mx-site-bg, #ffffff))",
+    "kartBg": "var(--mx-site-surface, #f6f7f9)",
+    "cizgi": "color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent)",
+    "accent": "var(--mx-site-primary, #2563eb)",
+    "accentInk": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318))",
+    "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+    "vurguBg": "var(--mx-site-primary, #2563eb)",
+    "vurguText": "var(--mx-site-primary-contrast, #ffffff)",
+    "logoH": "48px",
+    "bgcolor": "var(--mx-site-bg, #ffffff)",
+    "color": "var(--mx-site-text, #111318)"
+  },
+  "data": [],
+  "veri": {
+    "statik": true,
+    "dinamik": false,
+    "kaynak": "desing",
+    "alanlar": {
+      "hakkinda": "kısa tanıtım (dil sözlüğü; yoksa setting.description)",
+      "tel": "telefon (yoksa setting.phone)",
+      "eposta": "e-posta (yoksa setting.email)",
+      "adres": "adres (dil sözlüğü; yoksa setting.address)",
+      "services": "bağlantı listesi [{ name, href }] (footer-10)",
+      "hours": "çalışma saatleri [{ days, time }]",
+      "legal": "yasal bağlantılar [{ text, href }]",
+      "social": "sosyal hesaplar [{ ad, url }] (yoksa site ayarı)",
+      "rightsText": "telif satırı (yoksa @all-rights@)",
+      "nlTitle": "bülten başlığı (bülten formu yalnız başlık/metin + alıcı e-posta varken)"
+    }
+  }
+}

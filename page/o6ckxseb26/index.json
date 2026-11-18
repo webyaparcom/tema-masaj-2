@@ -3,17 +3,23 @@
   "name": {
     "tr": "Seanslar",
     "en": "Sessions",
-    "ar": "الجلسات"
+    "ar": "الجلسات",
+    "de": "Sitzungen",
+    "ru": "Сеансы"
   },
   "description": {
     "tr": "Ritüel adımları ve ev kuralları.",
     "en": "Ritual steps and house rules.",
-    "ar": "خطوات الطقس وقواعد البيت."
+    "ar": "خطوات الطقس وقواعد البيت.",
+    "de": "Ritualschritte und Hausregeln.",
+    "ru": "Шаги ритуала и правила дома."
   },
   "keyword": {
     "tr": "Seanslar",
     "en": "Sessions",
-    "ar": "الجلسات"
+    "ar": "الجلسات",
+    "de": "Sitzungen",
+    "ru": "Сеансы"
   },
   "path": "hizmetler",
   "icon": "work",
@@ -34,7 +40,9 @@
   "title": {
     "tr": "Seanslar",
     "en": "Sessions",
-    "ar": "الجلسات"
+    "ar": "الجلسات",
+    "de": "Sitzungen",
+    "ru": "Сеансы"
   },
   "date": "2026-11-16T18:08:37.524Z",
   "update": "2026-11-16T18:11:12.475Z"

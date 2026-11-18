@@ -5,12 +5,16 @@
       "name": {
         "tr": "Seanslar",
         "en": "Sessions",
-        "ar": "الجلسات"
+        "ar": "الجلسات",
+        "de": "Sitzungen",
+        "ru": "Сеансы"
       },
       "description": {
         "tr": "Ritüel adımları ve ev kuralları.",
         "en": "Ritual steps and house rules.",
-        "ar": "خطوات الطقس وقواعد البيت."
+        "ar": "خطوات الطقس وقواعد البيت.",
+        "de": "Ritualschritte und Hausregeln.",
+        "ru": "Шаги ритуала и правила дома."
       },
       "path": "hizmetler",
       "icon": "work",
@@ -31,7 +35,9 @@
       "name": {
         "tr": "Hakkımızda",
         "en": "About",
-        "ar": "من نحن"
+        "ar": "من نحن",
+        "de": "Über uns",
+        "ru": "О нас"
       },
       "status": "play",
       "id": "hakkimizda",
@@ -52,7 +58,9 @@
       "description": {
         "tr": "Ev kuralları ve misafir notları (kurgusal).",
         "en": "House rules and guest notes (fictional).",
-        "ar": "قواعد البيت وملاحظات الضيوف (افتراضي)."
+        "ar": "قواعد البيت وملاحظات الضيوف (افتراضي).",
+        "de": "Hausregeln und Gästehinweise (fiktiv).",
+        "ru": "Правила дома и заметки для гостей (вымышленные)."
       }
     },
     {
@@ -60,12 +68,16 @@
       "name": {
         "tr": "Sorular",
         "en": "Questions",
-        "ar": "الأسئلة"
+        "ar": "الأسئلة",
+        "de": "FAQ",
+        "ru": "FAQ"
       },
       "description": {
         "tr": "Merak edilenler ve kısa yanıtlar.",
         "en": "Common questions and short answers.",
-        "ar": "أسئلة متكررة وإجابات موجزة."
+        "ar": "أسئلة متكررة وإجابات موجزة.",
+        "de": "Was Sie wissen möchten, in kurzen Antworten.",
+        "ru": "Что интересует читателей — в коротких ответах."
       },
       "path": "sorular",
       "icon": "help",
@@ -86,12 +98,16 @@
       "name": {
         "tr": "Randevu",
         "en": "Booking",
-        "ar": "الحجز"
+        "ar": "الحجز",
+        "de": "Termin",
+        "ru": "Запись"
       },
       "description": {
         "tr": "Seans, terapist, gün ve saat seçerek randevu talebi (demo).",
         "en": "Booking request by session, therapist, day and time (demo).",
-        "ar": "طلب حجز باختيار الجلسة والمعالج واليوم والوقت (تجريبي)."
+        "ar": "طلب حجز باختيار الجلسة والمعالج واليوم والوقت (تجريبي).",
+        "de": "Terminanfrage mit Auswahl von Sitzung, Therapeut, Tag und Uhrzeit (Demo).",
+        "ru": "Заявка на запись с выбором сеанса, терапевта, дня и времени (демо)."
       },
       "path": "teklif-al",
       "icon": "event",
@@ -110,7 +126,9 @@
       "name": {
         "tr": "İletişim",
         "en": "Contact",
-        "ar": "تواصل"
+        "ar": "تواصل",
+        "de": "Kontakt",
+        "ru": "Контакты"
       },
       "status": "play",
       "id": "iletisim",
@@ -131,7 +149,9 @@
       "description": {
         "tr": "Sohbet biçiminde mesaj formu, adres ve saatler.",
         "en": "Chat-style message form, address and hours.",
-        "ar": "نموذج رسالة على شكل محادثة والعنوان والساعات."
+        "ar": "نموذج رسالة على شكل محادثة والعنوان والساعات.",
+        "de": "Nachrichtenformular im Chatformat, Adresse und Zeiten.",
+        "ru": "Форма сообщения в формате чата, адрес и часы работы."
       }
     }
   ],

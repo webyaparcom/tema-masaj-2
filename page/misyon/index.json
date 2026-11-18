@@ -3,17 +3,23 @@
   "name": {
     "tr": "Misyon",
     "en": "Mission",
-    "ar": "المهمة"
+    "ar": "المهمة",
+    "de": "Mission",
+    "ru": "Миссия"
   },
   "description": {
     "tr": "Misyonumuz",
     "en": "Our mission",
-    "ar": "مهمتنا"
+    "ar": "مهمتنا",
+    "de": "Unsere Mission",
+    "ru": "Наша миссия"
   },
   "keyword": {
     "tr": "Misyon",
     "en": "mission, our mission, corporate responsibility",
-    "ar": "الرسالة, رسالتنا, المسؤولية المؤسسية"
+    "ar": "الرسالة, رسالتنا, المسؤولية المؤسسية",
+    "de": "Mission",
+    "ru": "Миссия"
   },
   "path": "misyon",
   "icon": "flag",
@@ -29,12 +35,16 @@
   "text": {
     "tr": "<h2>Misyonumuz</h2>\n<p>Şehrin ortasında sessiz bir oda ve sabit süreli, özenli masaj seansları sunmak.</p>",
     "en": "<h2>Our mission</h2>\n<p>To offer a quiet room in the middle of the city and careful, fixed-length massage sessions.</p>",
-    "ar": "<h2>مهمتنا</h2>\n<p>تقديم غرفة هادئة في قلب المدينة وجلسات تدليك متقنة بمدة ثابتة.</p>"
+    "ar": "<h2>مهمتنا</h2>\n<p>تقديم غرفة هادئة في قلب المدينة وجلسات تدليك متقنة بمدة ثابتة.</p>",
+    "de": "<h2>Unsere Mission</h2>\n<p>Mitten in der Stadt einen ruhigen Raum und sorgfältige Massagen mit festen Zeiten anzubieten.</p>",
+    "ru": "<h2>Наша миссия</h2>\n<p>Предлагать тихую комнату в центре города и тщательные сеансы массажа с фиксированной продолжительностью.</p>"
   },
   "title": {
     "tr": "Misyon",
     "en": "Mission",
-    "ar": "المهمة"
+    "ar": "المهمة",
+    "de": "Mission",
+    "ru": "Миссия"
   },
   "date": "2026-11-16T18:08:37.378Z",
   "update": "2026-11-16T18:11:12.497Z",

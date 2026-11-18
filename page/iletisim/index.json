@@ -2,7 +2,9 @@
   "name": {
     "tr": "İletişim",
     "en": "Contact",
-    "ar": "تواصل"
+    "ar": "تواصل",
+    "de": "Kontakt",
+    "ru": "Контакты"
   },
   "status": "play",
   "category": "",
@@ -23,7 +25,9 @@
   "description": {
     "tr": "Sohbet biçiminde mesaj formu, adres ve saatler.",
     "en": "Chat-style message form, address and hours.",
-    "ar": "نموذج رسالة على شكل محادثة والعنوان والساعات."
+    "ar": "نموذج رسالة على شكل محادثة والعنوان والساعات.",
+    "de": "Nachrichtenformular im Chatformat, Adresse und Zeiten.",
+    "ru": "Форма сообщения в формате чата, адрес и часы работы."
   },
   "spot": {
     "tr": "",
@@ -34,12 +38,16 @@
   "title": {
     "tr": "İletişim",
     "en": "Contact",
-    "ar": "تواصل"
+    "ar": "تواصل",
+    "de": "Kontakt",
+    "ru": "Контакты"
   },
   "keyword": {
     "tr": "iletişim",
     "en": "contact",
-    "ar": "اتصال"
+    "ar": "اتصال",
+    "de": "Kontakt",
+    "ru": "контакты"
   },
   "text": {},
   "update": "2026-11-16T18:11:12.492Z",

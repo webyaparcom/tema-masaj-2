@@ -2,7 +2,9 @@
   "name": {
     "tr": "Hakkımızda",
     "en": "About",
-    "ar": "من نحن"
+    "ar": "من نحن",
+    "de": "Über uns",
+    "ru": "О нас"
   },
   "status": "play",
   "category": "",
@@ -23,7 +25,9 @@
   "description": {
     "tr": "Ev kuralları ve misafir notları (kurgusal).",
     "en": "House rules and guest notes (fictional).",
-    "ar": "قواعد البيت وملاحظات الضيوف (افتراضي)."
+    "ar": "قواعد البيت وملاحظات الضيوف (افتراضي).",
+    "de": "Hausregeln und Gästehinweise (fiktiv).",
+    "ru": "Правила дома и заметки для гостей (вымышленные)."
   },
   "spot": {
     "tr": "",
@@ -34,12 +38,16 @@
   "title": {
     "tr": "Hakkımızda",
     "en": "About",
-    "ar": "من نحن"
+    "ar": "من نحن",
+    "de": "Über uns",
+    "ru": "О нас"
   },
   "keyword": {
     "tr": "hakkımızda",
     "en": "about",
-    "ar": "من نحن"
+    "ar": "من نحن",
+    "de": "Über uns",
+    "ru": "О нас"
   },
   "text": {},
   "update": "2026-11-16T18:11:12.479Z",

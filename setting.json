@@ -4,12 +4,16 @@
   "description": {
     "tr": "Nehir Masaj Evi: Antalya Muratpaşa’da klasik, sıcak taş, aromaterapi ve ayak masajı; paketinizi seçin, gün ve saati çarktan belirleyin. Demo site; içerik ve fiyatlar kurgusaldır.",
     "en": "Nehir Massage House: classic, hot stone, aromatherapy and foot massage in Muratpasa, Antalya; choose your package and pick a day and time on the wheel. Demo site; content and prices are fictional.",
-    "ar": "بيت نهير للتدليك: تدليك كلاسيكي وبالحجارة الساخنة وبالزيوت العطرية وتدليك القدمين في مورات باشا، أنطاليا؛ اختر باقتك وحدّد اليوم والوقت من العجلة. موقع تجريبي؛ المحتوى والأسعار افتراضية."
+    "ar": "بيت نهير للتدليك: تدليك كلاسيكي وبالحجارة الساخنة وبالزيوت العطرية وتدليك القدمين في مورات باشا، أنطاليا؛ اختر باقتك وحدّد اليوم والوقت من العجلة. موقع تجريبي؛ المحتوى والأسعار افتراضية.",
+    "de": "Nehir Masaj Evi: klassische Massage, Hot Stone, Aromatherapie und Fußmassage in Antalya Muratpaşa; wählen Sie Ihr Paket und bestimmen Sie Tag und Uhrzeit per Rad. Demo-Website; Inhalt und Preise sind fiktiv.",
+    "ru": "Nehir Masaj Evi: классический массаж, массаж горячими камнями, ароматерапия и массаж стоп в Анталье, Муратпаша; выберите пакет, а день и время определите колесом. Демо-сайт; содержание и цены вымышлены."
   },
   "keyword": {
     "tr": "masaj, sıcak taş masajı, aromaterapi, ayak masajı, rahatlama, Antalya",
     "en": "massage, hot stone massage, aromatherapy, foot massage, relaxation, Antalya",
-    "ar": "تدليك، تدليك بالحجارة الساخنة، العلاج بالروائح، تدليك القدمين، استرخاء، أنطاليا"
+    "ar": "تدليك، تدليك بالحجارة الساخنة، العلاج بالروائح، تدليك القدمين، استرخاء، أنطاليا",
+    "de": "Massage, Heißsteinmassage, Aromatherapie, Fußmassage, Entspannung, Antalya",
+    "ru": "массаж, массаж горячими камнями, ароматерапия, массаж стоп, релаксация, Анталья"
   },
   "category": "Kurumsal",
   "name": "Nehir Masaj Evi",
@@ -18,15 +22,27 @@
     "tr": true,
     "en": true,
     "ar": true,
-    "de": false,
-    "ru": false,
+    "de": true,
+    "ru": true,
     "es": false,
     "fr": false,
     "it": false,
     "ja": false,
     "zh": false,
     "ko": false,
-    "pt": false
+    "pt": false,
+    "fa": false,
+    "he": false,
+    "ur": false,
+    "nl": false,
+    "pl": false,
+    "uk": false,
+    "az": false,
+    "ka": false,
+    "el": false,
+    "bg": false,
+    "ro": false,
+    "hi": false
   },
   "logo": "logo.png",
   "multi": false,
